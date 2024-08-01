@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+/*-----------------------------------------Style Header section--------------------------------------------*/
+
+header{
+    padding: 10px 80px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6B3CC9;
+}
+
+.navbar{
+    gap: 2rem;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+.navlist{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navlist li{
+    margin: 0 28px;
+    font-size: 14px;
+}
+
+.navlist li a{
+    display: inline-flex;
+    font-weight: 500;
+    color: white;
+}
+
+.menu-icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icon .bar,
+.menu-icon::after,
+.menu-icon::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #ffcc24;
+    margin: 6px 0;
+    transition: .4s;
+}
+
+.menu-icon.active::before{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.menu-icon.active::after{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.menu-icon.active .bar{
+    opacity: 0;
+}
+
+/*-----------------------------------------End Style Header section--------------------------------------------*/
+
+/*-----------------------------------------Style Home section--------------------------------------------*/
+.background{
+    background-image: url(./Img/background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    top: 60px;
+    background-position: top center;
+    position: relative; 
+    z-index: -1;
+}
+
+.container{
+    width: 600px;
+    height: 290px;
+    top: 354px;
+    position: relative;
+    display: flex;
+    flex-direction: column ;
+    background: linear-gradient(to right, #4DCA79, #1CBDDD);
+    align-items: center;
+    margin-left: 80px;
+    line-height: 48px;
+    padding: 24px 40px 32px 40px;
+}
+
+p{
+    color: #ffffff;
+    z-index: 1;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.container button{
+    background-color: #F28D35;
+    border: none;
+    padding: 12px 20px 12px 20px;
+}
+
+
