@@ -235,18 +235,16 @@ header{
 
 .faq-content p{
     position: relative;
-    display: none;
+    
     font-weight: 400;
     font-size: 14px;
+    color: #6F6C90;
 }
 
 .content-box1 h4{
     color: #6B3CC9;
 } 
 
-.content-box1 p{
-    color: #6F6C90;
-} 
 /*-----------------------------------------End Style FAQ section--------------------------------------------*/
 
 /*-----------------------------------------Style Footer section--------------------------------------------*/
@@ -402,7 +400,6 @@ hr{
         border-radius: 4px;
     }
     
-
     .document{
         padding: 0 40px;
     }
@@ -441,5 +438,24 @@ hr{
 
     hr{
         width: 90%; 
+    }
+}
+
+@media (max-width: 375px){
+    .document{
+        padding: 0 20px;
+    }
+
+    .document-container{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .document-box{
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
     }
 }
