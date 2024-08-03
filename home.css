@@ -1,31 +1,26 @@
 /*-----------------------------------------Style Home section--------------------------------------------*/
-.background{
-    background-image: url(./Img/background.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative; 
-    z-index: -1;
+.home{
+    position: relative;
 }
 
-.background .container{
-    width: 560px;
-    height: 270px;
-    top: 355px;
-    position: relative;
-    gap: 8px;
-    background: linear-gradient(to right, #4DCA79, #1CBDDD);
-    align-items: center;
-    margin-left: 80px;
+.home .image{
+    width: 100%;
+	display: block;
+}
+
+.home .container{
+    width: 590px;
+	background: linear-gradient(256.73deg, #1cbddd 27.86%, #4dca79 100%);
+	font-size: 48px;
+	color: white;
+	padding: 24px 40px;
+	position: absolute;
     line-height: 48px;
-    padding: 24px 40px 32px 40px;
-    z-index: 1;
+	top: 260px;
+	left: 50px;
 }
 
 .container p{
-    color: #ffffff;
     font-size: 48px;
     font-weight: 700;
 }
@@ -49,39 +44,23 @@
     html{
         font-size: 50%;
     }
+}
 
-    .container{
-        width: 50%;
-    }
-
+@media all and (max-width: 1080px) {
+	.home .container {
+		position: initial;
+		width: 100%;
+	}
+	
 }
 
 @media all and (max-width: 768px){
-    
-    .background .container{
-        width: 100%;
-        height: 100%;
-        top: 100vh;
-        position: relative;
-        margin-left: 0;
-        margin-right: 0;
-        gap: 8px;
-        line-height: 48px;
-        padding: 24px 40px 32px 40px;
-    }
-    
-    .container p{
-        color: #ffffff;
-        font-size: 40px;
-        font-weight: 600;
-        z-index: 1;
-    }
     
 }
 
 @media (max-width: 375px){
 
-    .background .container{
+    .home .container{
         width: 100%;
         height: 100%;
         gap: 4px;
