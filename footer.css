@@ -1,0 +1,133 @@
+/*-----------------------------------------Style Footer section--------------------------------------------*/
+
+footer{
+    background-color: #6B3CC9;
+    margin-top: 60px;
+    padding: 40px 80px 20px 80px;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    gap: 20px;
+}
+
+.logo-line{
+    width: 413px;
+    margin-right: 130px;
+}
+
+.logo-line p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.technologies{
+    line-height: 25px;
+    width: 197px;
+}
+
+.technologies h3{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.technologies p{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: .5rem;
+}
+
+.services{
+    width: 197px;
+}
+
+.services h3{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.services p{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.footer-bar{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+hr{
+    width: 50%; 
+}
+
+.footer-bar .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*-----------------------------------------End Style Footer section--------------------------------------------*/
+
+/*-----------------------------------------Responsive media--------------------------------------------*/
+
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .footer-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    }
+    .box{
+        margin-top: 80px;
+        gap: 6rem;
+        justify-content: left;
+    }
+
+    .services{
+        width: 230px;
+    }
+
+    hr{
+        width: 90%; 
+    }
+}
+
+@media (max-width: 375px){
+
+    footer{
+        padding: 40px 20px 20px 20px;
+    }
+
+    .logo-line p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .footer-box{
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    }
+}

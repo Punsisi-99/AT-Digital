@@ -1,0 +1,104 @@
+/*-----------------------------------------Style Header section--------------------------------------------*/
+.nav-bar {
+	background: #6b3cc9;
+	display: flex;
+	padding: 10px 30px;
+	align-items: center;
+	justify-content: space-between;
+	height: 77px;
+}
+
+.nav-bar .logo {
+	width: 240px;
+}
+
+.nav-bar .navigation ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-bar .navigation .close-icon {
+	display: none;
+}
+
+.nav-bar .navigation ul li:first-child {
+	display: none;
+}
+
+.nav-bar .navigation ul li a {
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-bar .menu {
+	width: 31px;
+	display: none;
+	cursor: pointer;
+}
+/*-----------------------------------------End Style Header section--------------------------------------------*/
+
+/*-----------------------------------------Responsive media--------------------------------------------*/
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+
+    .navlist li{
+        margin: 0 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media all and (max-width: 768px){
+    .nav-bar .menu {
+		display: inline;
+	}
+
+	.nav-bar .navigation.hidden {
+		display: none;
+	}
+
+	.nav-bar .navigation {
+		position: fixed;
+		z-index: 2;
+		background: white;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		padding: 20px;
+	}
+
+	.nav-bar .navigation ul {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.nav-bar .navigation .close-icon {
+		display: initial;
+		font-weight: bold;
+		cursor: pointer;
+		position: fixed;
+		right: 20px;
+		top: 10px;
+		font-size: 30px;
+	}
+
+	.nav-bar .navigation ul li:first-child {
+		display: initial;
+	}
+
+	.nav-bar .navigation ul li a {
+		color: black;
+	}
+}
+
+@media (max-width: 375px){
+
+}

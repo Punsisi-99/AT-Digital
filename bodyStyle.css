@@ -1,0 +1,133 @@
+/*-----------------------------------------Style Body section--------------------------------------------*/
+
+.document{
+    padding: 0 188px;
+    margin-top: 40px;
+}
+
+.document-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.document-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.document-box img{
+    width: 414px;
+}
+
+.document-box .content{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.document-box .content h3{
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #6B3CC9;
+}
+
+.document-box .content p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.document-box .content button{
+    color: #ffffff;
+    background-color: #F28D35;
+    border-radius: 4px;
+    width: 129px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+}
+/*-----------------------------------------End Style Body section--------------------------------------------*/
+
+/*-----------------------------------------Responsive media--------------------------------------------*/
+
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+
+    .document{
+        padding: 0 140px;
+    }
+
+    .document-box .content h3{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 768px){
+    
+    .document{
+        padding: 0 40px;
+        margin-top: 370px;
+    }
+
+    .document-box img{
+        width: 275px;
+    }
+    
+    .document-box .content h3{
+        font-size: 22px;
+    }
+
+    .document-box .content p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .document{
+        padding: 0 20px;
+    }
+
+    .document-container{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .document-box{
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .document-box img{
+        width: 275px;
+    }
+
+    .document-box .content h3{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .document-box .content p{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .document-box .content button{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+}
