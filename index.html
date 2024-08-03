@@ -5,40 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AT Digital</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--style-->
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!----------------------------------------------Header Section-------------------------------------------->
-    <header class="navbar">
-        <div class="logo">
-            <img src="./Img/Logo.png" alt="AT DIGITAL">
-        </div>
-        <ul class="navlist">
-            <li><a href="#service">SERVICES</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">CAREERS</a></li>
-        </ul>
-        <div class="menu-icon">
-            <div class="bar"></div>
-        </div>
+    <header class="nav-bar">
+        <img src="./Img/Logo.png" class="logo" alt="AT Digital logo" />
+        <nav class="navigation hidden">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">CAREERS</a></li>
+            </ul>
+
+            <span class="close-icon">X</span>
+        </nav>
+        <img class="menu" src="./Img/hamburger.png" alt="Hamburger icon" />
     </header>
 
     <!---------------------------------------End Header Section------------------------------------------------>
 
     <!---------------------------------------------Home Section------------------------------------------------>
 
-    <div class="home">
-        <div class="background">
+    <div class="background">
         <div class="container">
-            <div class="content">
                 <p>We crush your competitors, goals, and sales records - without the B.S.</p>
                 <button>Get free consultation</button>
-            </div>
         </div>
     </div>
-    </div>
+
 
     <!---------------------------------------------End Home Section------------------------------------------------>
 
@@ -143,6 +147,8 @@
         </div>
     </footer>
     <!---------------------------------------------End Footer Section------------------------------------------------>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>

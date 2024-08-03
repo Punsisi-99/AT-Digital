@@ -1,16 +1,13 @@
 //menubar icon
-let menuIcon = document.querySelector(".menu-icon");
-let navlist = document.querySelector(".navlist");
+window.addEventListener("load", () => {
+	const closeBtn = document.querySelector(".nav-bar .close-icon");
+	const menuBtn = document.querySelector(".nav-bar .menu");
+	const navMenu = document.querySelector(".nav-bar .navigation");
 
-menuIcon.addEventListener("click", () => {
-    menuIcon.classList.toggle("active");
-    navlist.classList.toggle("active");
-    document.body.classList.toggle("open");
+	function toggleNavmenu() {
+		navMenu.classList.toggle("hidden");
+	}
+
+	closeBtn.addEventListener("click", toggleNavmenu);
+	menuBtn.addEventListener("click", toggleNavmenu);
 });
-
-//remove navlist
-navlist.addEventListener("click",()=>{
-    navlist.classList.remove("active");
-    menuIcon.classList.remove("active");
-    document.body.classList.remove("open");
-})
