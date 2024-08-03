@@ -97,6 +97,10 @@ hr{
 }
 
 @media all and (max-width: 768px){
+    footer{
+        padding: 40px 20px 20px 20px;
+    }
+
     .footer-box{
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
@@ -116,18 +120,26 @@ hr{
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 530px){
 
-    footer{
-        padding: 40px 20px 20px 20px;
+    .logo-line{
+        width: 260px;
     }
 
     .logo-line p{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
     }
     
-    .footer-box{
-        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    .box{
+        flex-direction: column;
+    }
+
+    hr{
+        width: 95%; 
+    }
+
+    .footer-bar .content{
+        font-size: 12px;
     }
 }

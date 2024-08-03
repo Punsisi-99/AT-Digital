@@ -9,13 +9,14 @@
 }
 
 .faq-container{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
 }
 
 .faq-container h3{
+    text-align: center;
     align-items: center;
     justify-content: center;
     color: #6B3CC9;
@@ -68,13 +69,26 @@
     }
 }
 
-@media all and (max-width: 768px){
+@media (max-width: 1080px){
+    .faq{
+        align-items: center;
+        padding-left: 142px;
+        padding-right: 142px;
+    }
+}
 
+@media all and (max-width: 768px){
     .faq{
         align-items: center;
         padding-left: 42px;
         padding-right: 42px;
     }
+    .faq-container{
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    
     
 }
 
